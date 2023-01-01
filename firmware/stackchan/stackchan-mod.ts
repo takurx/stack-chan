@@ -101,6 +101,9 @@ function onButtonChange(button, isPressed) {
       break
     case 'C':
       /* noop */
+      const c_primaryColor = hsl(randomBetween(0, 360), 1.0, 0.5)
+      const c_secondaryColor = hsl(randomBetween(0, 360), 1.0, 0.5)
+      swapFace(c_primaryColor, c_secondaryColor)
       break
   }
 }
